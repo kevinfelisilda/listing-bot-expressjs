@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const router = express.Router();
 router.get('/', (req, res) => {
   res.writeHead(200, { 'Content-Type': 'text/html' });
-  res.write('<pre>' + JSON.stringify(req, null, 2) + '</pre>');
+  res.write('<h1>Test</h1><pre>' + JSON.stringify(req, null, 2) + '</pre>');
   res.end();
 });
 router.get('/webhook', (req, res) => {
